@@ -14,27 +14,26 @@ class DiceApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Dice App',
-      // theme: ThemeData(
-      //     primaryColor: HexColor('#C7B9FF'),
-      //     ),
       home: Scaffold(
         backgroundColor: HexColor('#C7B9FF'),
-        // appBar: AppBar(
-        //   title: const Text('Dice App'),
-        // ),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text(
-                'Dice App',
-                style: GoogleFonts.poppins(
-                  fontSize: 36,
+              Padding(
+                padding: const EdgeInsets.only(bottom: 60),
+                child: Text(
+                  'Roll the Dice',
+                  style: GoogleFonts.poppins(
+                    fontSize: 36,
+                    fontWeight: FontWeight.w700,
+                  ),
                 ),
               ),
-              // Text(
-              //   'It\'s time to learn Flutter!',
-              // ),
+              Image.asset(
+                'assets/img/1.png',
+                width: 200,
+              ),
             ],
           ),
         ),
